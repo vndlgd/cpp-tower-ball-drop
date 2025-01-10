@@ -10,7 +10,7 @@ double getTowerHeight()
 
 double calculateBallHeight(double current_height, int sec)
 {
-    double gravity{9.8};
+    const double gravity{9.8};
     // formula: distance fallen = (gravity) + (sec * sec) / 2
     double fallDistace = {gravity * (sec * sec) / 2.0};
     double ballHeight{current_height - fallDistace};
